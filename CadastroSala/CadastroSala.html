@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Sala</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <div class="container my-4 p-4 bg-light rounded shadow-lg">
+    <!-- Cabeçalho -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle fw-bold" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Cadastro
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="../ListarFilmes/ListaFilmes.html">Filme</a></li>
+          <li><a class="dropdown-item" href="../Sala/Salas.html">Sala</a></li>
+          <li><a class="dropdown-item" href="../ListarSessao/ListaSessao.html">Sessão</a></li>
+        </ul>
+      </div>
+
+      <!-- User Info -->
+      <div class="d-flex align-items-center user-info">
+        <i class="bi bi-person-circle fs-1 text-primary"></i>
+        <span id="user-name" class="ms-3">Usuário</span>
+      </div>
+    </div>
+
+    <!-- Título -->
+    <h2 id="formTitle" class="text-center mb-4">Cadastro de Sala</h2>
+
+    <!-- Formulário de Cadastro -->
+    <form id="cadastroSalaForm">
+      <div class="mb-3">
+        <label for="numero" class="form-label">Número</label>
+        <input type="text" class="form-control" id="numero" placeholder="Digite o número da sala" required>
+      </div>
+      <div class="mb-3">
+        <label for="capacidade" class="form-label">Capacidade</label>
+        <input type="number" class="form-control" id="capacidade" placeholder="Digite a capacidade da sala" required>
+      </div>
+
+      <!-- Botões -->
+      <div class="d-flex justify-content-between mt-4 col-12">
+        <button type="button" class="btn btn-secondary btn-lg"
+          onclick="window.location.href='../Sala/Salas.html'">Voltar</button>
+        <button type="submit" class="btn btn-primary btn-lg">Salvar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../CadastroSala/CadastroSala.js"></script> <!-- JavaScript externo -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+/* Estilo Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh; /* A altura total da tela */
+  }
+  
+  .container {
+    max-inline-size: 400px;
+    inline-size: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  /* Cabeçalho */
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+    margin-block-end: 30px;
+  }
+  
+  /* Container de botões */
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Estilo dos botões */
+  .btn-custom {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6c757d; /* Cor cinza */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-custom:hover {
+    background-color: #5a6268; /* Cor mais escura ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+  }
+  
+  .btn-custom:active {
+    background-color: #4e555b; /* Cor ainda mais escura quando pressionado */
+    transform: translateY(1px); /* Efeito de pressionado */
+  }
+  
+  /* Ajustes para dispositivos menores */
+  @media (max-inline-size: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-inline-size: 500px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    .btn-custom {
+      padding: 10px 18px;
+      font-size: 0.9rem;
+    }
+  }
+  

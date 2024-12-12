@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Sessões</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css"> <!-- CSS personalizado -->
+</head>
+<body>
+  <div class="container my-4 p-4 bg-light rounded shadow-lg">
+    <!-- Cabeçalho -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Cadastro
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="../ListarFilmes/ListaFilmes.html">Filme</a></li>
+          <li><a class="dropdown-item" href="../Sala/Salas.html">Sala</a></li>
+          <li><a class="dropdown-item" href="../ListarSessao/ListaSessao.html">Sessão</a></li>
+        </ul>
+      </div>
+      
+      <div class="d-flex align-items-center user-info">
+        <i class="bi bi-person-circle fs-1 text-primary"></i>
+        <span id="user-name" class="ms-3">Usuário</span>
+      </div>
+    </div>
+    <!-- Título -->
+    <h2 class="mb-4 text-center">Lista de Sessões</h2>
+
+    <!-- Grid de Cards -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="session-list">
+      <!-- As sessões serão renderizadas aqui dinamicamente -->
+    </div>
+
+    <!-- Botões do Rodapé -->
+    <div class="mt-4 d-flex justify-content-between">
+      <button class="btn btn-secondary btn-lg" onclick="window.history.back()">Voltar</button>
+      <button class="btn btn-primary btn-lg" onclick="window.location.href='../CadastraraSessao/cadastroSessao.html'">Cadastrar Sessão</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="Sessao.js"></script> <!-- JavaScript para carregar sessões -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
